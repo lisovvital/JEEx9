@@ -9,4 +9,18 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>BookControler</display-name>
+    <servlet-name>BookControler</servlet-name>
+    <servlet-class>edu.nbcc.controllers.BookControler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookControler</servlet-name>
+    <url-pattern>/books</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>BookControler</servlet-name>
+    <url-pattern>/book/*</url-pattern>
+  </servlet-mapping>
 </web-app>
